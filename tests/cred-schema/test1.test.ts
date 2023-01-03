@@ -189,6 +189,7 @@ describe('create and resolve a credential schema', () => {
 
   // create a credential here
 
+
   // generate a QR Code and template
 
   // parse QR code and template

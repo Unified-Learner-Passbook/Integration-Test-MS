@@ -1,0 +1,18 @@
+[submodule "Cred-Schema-MS"]
+	path = Cred-Schema-MS
+	url = https://github.com/Unified-Learner-Passbook/Cred-Schema-MS
+[submodule "Credential-MS"]
+	path = Credential-MS
+	url = https://github.com/Unified-Learner-Passbook/Credential-MS
+[submodule "DID-L3-MS"]
+	path = DID-L3-MS
+	url = https://github.com/Unified-Learner-Passbook/DID-L3-MS
+[submodule "MockAadhar-MS"]
+	path = MockAadhar-MS
+	url = https://github.com/Unified-Learner-Passbook/MockAadhar-MS
+[submodule "Issuer-MS"]
+	path = Issuer-MS
+	url = https://github.com/Unified-Learner-Passbook/Issuer-MS
+[submodule "Verifier-MS"]
+	path = Verifier-MS
+	url = https://github.com/Unified-Learner-Passbook/Verifier-MS
