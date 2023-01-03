@@ -1,0 +1,66 @@
+name: ULP integration tests
+on: [push]
+jobs:
+  Credential-Schema-MS:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          repository: Unified-Learner-Passbook/Cred-Schema-MS
+          path: Cred-Schema-MS
+
+      - name: Build Cred Schema
+        run: yarn build
+        working-directory: ./Cred-Schema-MS
+
+      - name: Start the API
+        run: yarn start
+        working-directory: ./Cred-Schema-MS
+
+  Credential-MS:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          repository: Unified-Learner-Passbook/Credential-MS
+          path: Credential-MS
+
+      - name: Build Cred Schema
+        run: yarn build
+        working-directory: ./Credential-MS
+
+      - name: Start the API
+        run: yarn start
+        working-directory: ./Credential-MS
+
+  DID-L3-MS:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          repository: Unified-Learner-Passbook/DID-L3-MS
+          path: DID-L3-MS
+
+      - name: Build Cred Schema
+        run: yarn build
+        working-directory: ./DID-L3-MS
+
+      - name: Start the API
+        run: yarn start
+        working-directory: ./DID-L3-MS
+
+  Integration-Test-MS:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          repository: Unified-Learner-Passbook/Integration-Test-MS
+          path: Integration-Test-MS
+
+      - name: Run tests
+        run: yarn test
+        working-directory: ./Integration-Test-MS
